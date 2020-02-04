@@ -74,10 +74,12 @@ nav {
       }
       a {
         color: @mainPurple;
+        text-decoration: none;
+        font-family: @boldFont;
       }
     }
 
-    li a {
+    .link a {
       color: white;
       text-decoration: none;
       font-family: "Patua One";
@@ -291,6 +293,11 @@ nav ul.nav-links.open {
 
 //testimonial section//
 
+.leadership {
+  font-family: @textFont;
+  margin: 5rem 0;
+}
+
 .testimonial-section {
   margin-top: 15vh;
   background: #cab2ebbe;
@@ -427,6 +434,111 @@ button {
   margin-bottom: 3%;
   &:hover {
     background-color: plum;
+  }
+}
+
+//team page//
+.mission {
+  margin: 7rem 1.5rem 2rem 1.5rem;
+  background-color: @subPurple;
+  padding: 80px;
+  h1 {
+    font-family: @boldFont;
+    text-align: center;
+    font-size: 60px;
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-family: @textFont;
+    line-height: 1.6rem;
+  }
+}
+
+.team-banner {
+  background-image: url(../img/team/teamwork.svg);
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leaders {
+  display: flex;
+  justify-content: space-around;
+  font-family: @textFont;
+  line-height: 1.2rem;
+  @media @tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    margin: 1rem;
+  }
+  div {
+    width: 28%;
+    margin-bottom: 8%;
+    text-align: center;
+    padding: 2rem;
+    .face {
+      max-width: 100%;
+      border-radius: 50%;
+    }
+    @media @tablet {
+      width: 80%;
+    }
+  }
+}
+
+.leader {
+  background-color: #9559e91f;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  h3 {
+    font-style: italic;
+  }
+  h5 {
+    margin: 0.4rem 0;
+  }
+  p {
+    text-align: left;
+  }
+}
+
+.leadership {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#row3 {
+  justify-content: space-evenly;
+  .leader {
+    width: 25%;
+    @media @tablet {
+      width: 80%;
+    }
+  }
+}
+
+#footer {
+  margin-top: 0;
+  height: 20vh;
+  width: 100%;
+  .center {
+    background-color: @mainPurple;
+    i {
+      color: white;
+      margin-bottom: 5vh;
+      &:hover {
+        color: plum;
+      }
+    }
+  }
+
+  .cr {
+    text-align: center;
   }
 }
 
